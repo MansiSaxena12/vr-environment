@@ -1,0 +1,16 @@
+div{
+    height: 20px;
+    width: 124px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: aqua;
+    border-left: 5px solid pink;
+    border-right: 5px solid yellow;
+}
+.Lorem{
+    box-sizing: content-box;
+    border: 2px solid black;
+    
+    font-size: medium;
+}
