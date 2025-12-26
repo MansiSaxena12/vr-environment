@@ -14,3 +14,8 @@ div{
     
     font-size: medium;
 }
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
