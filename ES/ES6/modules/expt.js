@@ -1,0 +1,1 @@
+export let addition =(a,b)=>a+b;
