@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Calculator container */
+.calculator {
+  width: 320px;
+  /* max-width: 100%; */
+  height: 575px;
+  background: #000;
+  display: flex;              /* ✅ ADD THIS */
+  flex-direction: column;
+}
+
+/* Display area */
+.display {
+  height: 180px;
+  padding: 24px;
+  color: white;
+  font-size: 48px;
+  text-align: right;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+/* .display{
+        height: 296px;
+    padding: 38px;
+    color: white;
+    font-size: 70px;
+    padding-bottom: 45px;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+} */
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+    padding: 16px;
+  padding-bottom: 24px;
+}
+
+/* Common button */
+.btn {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  background: #1c1c1c;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Action buttons (AC, ⌫, ±) */
+.action {
+  background: #0f1a2b;
+  color: #4a7dff;
+}
+
+/* Operators */
+.operator {
+  background: #0f1a2b;
+  color: #4a7dff;
+}
+
+
+/* Equal button */
+.equal {
+  background: #3f6bff;
+  color: #fff;
+}
+
+/* Button press effect */
+.btn:active {
+  transform: scale(0.96);
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .calculator {
+    width: 100vh;
+    height: 100svh;
+    padding: 16px;
+    padding-right: 0;
+  }
+  .buttons{
+    justify-items: center;
+    height: 60vh;
+  }
+  .btn{
+    height: 88px;
+    width: 88px;
+    font-size: 28px
+  }
+  .display{
+    height: 296px;
+    font-size: 70px;
+    padding: 38px;
+    padding-bottom: 45px;
+  }
+}
